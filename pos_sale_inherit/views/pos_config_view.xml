@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="pos_config_view_form_inherit2" model="ir.ui.view">
+        <field name="name">pos.config.view.form.inherit2</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="pos_sale.pos_config_view_form_pos_sale"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='row mt16 o_settings_container'][1]" position="inside">
+                <div class="col-12 col-lg-6 o_setting_box"
+                             title="Check this to show draft sale orders.">
+                            <div class="o_setting_right_pane" >
+                                <span class="o_form_label">Display Quotations?</span>
+                                <div class="text-muted">
+                                    <field name="display_quot"/>
+                                </div>
+                  
+                                </div>
+                            </div>
+                    
+            </xpath>
+        </field>
+    </record>
+</odoo>
